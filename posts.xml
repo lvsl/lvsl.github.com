@@ -5,24 +5,24 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
   <title>lvsl.github.com</title>
-  <link href="http://lvsl.github.com/"/>
-  <link type="application/atom+xml" rel="self" href="http://lvsl.github.com/posts.xml"/>
+  <link href="https://lvsl.github.com/"/>
+  <link type="application/atom+xml" rel="self" href="https://lvsl.github.com/posts.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://lvsl.github.com/</id>
+  <id>https://lvsl.github.com/</id>
   <author>
     <name>Leonid Vasilyev</name>
-    <email>chin@shaftsoft.ru</email>
+    <email>vsleonid+blog@gmail.com</email>
   </author>
 
   {% for post in site.posts limit:5 %}
   <entry>
-    <id>http://lvsl.github.com/{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://lvsl.github.com{{ post.url }}"/>
+    <id>https://lvsl.github.com/{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="https://lvsl.github.com{{ post.url }}"/>
     <title>{{ post.title }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>Leonid Vasilyev</name>
-      <email>chin@shaftsoft.ru</email>
+      <email>vsleonid+blog@gmail.com</email>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
