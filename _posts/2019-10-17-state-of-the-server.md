@@ -8,8 +8,8 @@ tags:
   - security
 ---
 
-World has changed, mobile phones now have most secure environment, not server in a datacenter.
-Take a look at [iOS](https://www.apple.com/business/docs/site/iOS_Security_Guide.pdf) and [Android](https://source.android.com/security/reports/Google_Android_Enterprise_Security_Whitepaper_2018.pdf) security, it's far beyond what's server looks like.
+World has changed, mobile phones now have the most secure environment, not a server in a datacenter.
+Take a look at [iOS](https://www.apple.com/business/docs/site/iOS_Security_Guide.pdf) and [Android](https://source.android.com/security/reports/Google_Android_Enterprise_Security_Whitepaper_2018.pdf) security, it's far beyond what's servers look like.
 
 Mobile phones have "secure enclave"/"temper resistant env" in contrast, on servers there is ring-2/3 firmware, which is [a form of malware](https://lwn.net/Articles/738649/).
 
@@ -27,3 +27,5 @@ Clearly, modern servers need both (e.g. [GC](https://gvisor.dev/docs/architectur
 ### Software quality and reliability
 [Privilege separation](https://en.wikipedia.org/wiki/Privilege_separation) is an [old](https://cr.yp.to/qmail/qmailsec-20071101.pdf) idea. Prioritize [quality](https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code) and [reliability](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing) in distributed systems software over features.
 
+**(UPDATE)**
+This is exactly how [AWS Nitro Card Controller](https://www.slideshare.net/AmazonWebServices/powering-nextgen-ec2-instances-deep-dive-into-the-nitro-system-cmp303r1-aws-reinvent-2018?qid=4f64562d-0b08-4a33-a604-4aa492223843&v=&b=&from_search=1) looks like.
