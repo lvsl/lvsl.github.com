@@ -60,6 +60,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #283048, #859398);
+  background: linear-gradient(to bottom, #859398, #283048);
   font-family: 'Ropa Sans', sans-serif;
 }
