@@ -7,7 +7,7 @@ permalink: /fosdem-2020-go-dbus-systemd-presentation
 <div class="slider">
   <div class="slides">
     <div class="slide" id="slide-1">
-      <h1>Hello FOSDEM!</h1>
+      <h1>Hello, FOSDEM &#x1F389;</h1>
     </div>
     <div class="slide" id="slide-2">
       <h1>Agenda</h1>
