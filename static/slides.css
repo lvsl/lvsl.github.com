@@ -7,11 +7,17 @@
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
 }
+
 .slide {
   width: 300px;
   flex-shrink: 0;
   height: 100%;
 }
+
+.slides {
+  scroll-behavior: smooth;
+}
+
 .slides > div {
   scroll-snap-align: start;
 }
