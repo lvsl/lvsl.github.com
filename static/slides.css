@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #859398, #283048);
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
 .slider {
   width: 1000px;
   text-align: center;
@@ -32,7 +45,7 @@
   background: transparent;
 }
 
-.slides > div {
+.slide {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 1000px;
@@ -46,17 +59,4 @@
   position: relative;
   
   font-size: 3em;
-}
-
-html, body {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom, #859398, #283048);
-  font-family: "Trebuchet MS", Verdana, sans-serif;
 }
