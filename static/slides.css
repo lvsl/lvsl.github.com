@@ -59,4 +59,25 @@ body {
   position: relative;
   
   font-size: 3em;
+  
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  
+  grid-template-areas: 
+    "sheader"
+    "smain"
+    "sfooter";
+}
+
+.slide > header {
+  grid-area: sheader;
+}
+
+.slide > section {
+  grid-area: smain;
+}
+
+.slide > footer {
+  grid-area: sfooter;
 }
