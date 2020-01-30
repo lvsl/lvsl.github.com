@@ -48,17 +48,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3pt;
-}
-
-.slides > div:target {
-  transform: scale(0.8);
+  font-size: 30pt;
 }
 
 html, body {
   height: 100%;
   overflow: hidden;
 }
+
 body {
   display: flex;
   align-items: center;
