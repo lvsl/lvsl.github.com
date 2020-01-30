@@ -62,7 +62,7 @@ body {
   
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 25% 65% auto;
+  grid-template-rows: 25% 70% auto;
   
   grid-template-areas: 
     "sheader"
@@ -76,6 +76,9 @@ body {
 
 .slide > section {
   grid-area: smain;
+  font-size: 1.2em;
+  line-height: 0.9em;
+  margin: auto;
 }
 
 .slide > footer {
