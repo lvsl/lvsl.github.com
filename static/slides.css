@@ -86,3 +86,7 @@ body {
   width: 300px;
   height: 10px;
 }
+
+.slide > header > h1 {
+  margin: auto;
+}
