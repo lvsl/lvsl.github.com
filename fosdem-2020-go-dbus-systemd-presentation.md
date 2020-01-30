@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: slides
 titel: "Uplift your Linux systems programming skills with systemd and D-Bus"
 permalink: /fosdem-2020-go-dbus-systemd-presentation
 ---
 
-
-<h1>Hello</h1>
+<h1>Hello FOSDEM!</h1>
