@@ -1,11 +1,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>{{ page.title }}</title>
+<title>{{ page.title | default: title }}</title>
 <link href="/static/favicon.gif" rel="shortcut icon">
 <link href="/static/favicon.gif" rel="apple-touch-icon">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
 <link rel="stylesheet" type="text/css" href="/static/style.css">
-<script src="https://yandex.st/highlightjs/6.1/highlight.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://yandex.st/highlightjs/6.1/styles/solarized_dark.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
 <script type="text/javascript">
-  hljs.initHighlightingOnLoad();
+  hljs.highlightAll();
 </script>
