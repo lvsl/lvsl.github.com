@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Benchmark of serialization libraries in python
+title: Benchmark of serialization libraries in Python
 tags:
  - serialization
  - json
@@ -10,10 +10,9 @@ tags:
  - yaml
 ---
 
-This is my little survey of serialization libraries
-available in python.
+This is my brief survey of serialization libraries available in Python.
 
-Serialization libraries used in benchmark:
+Serialization libraries used in the benchmark:
 
  * [json](http://docs.python.org/library/json.html)
  * [cjson](http://pypi.python.org/pypi/python-cjson) 

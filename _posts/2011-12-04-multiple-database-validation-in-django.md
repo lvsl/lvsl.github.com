@@ -12,11 +12,11 @@ tags:
   - validation
 ---
 
-**Code in the post tested with django1.2, and 1.3.1**
+**Code in the post tested with Django 1.2 and 1.3.1**
 
-When you start django server with [runfcgi] it will perform
+When you start a Django server with [runfcgi], it will perform
 a [model validation] which requires your [django.db.DEFAULT_DB_ALIAS]
-(i.e. 'default') to be available for reading.
+(i.e., 'default') to be available for reading.
 
 The problem kicks in when you have multiple databases: master and slaves.
 
@@ -52,9 +52,9 @@ DATABASES = {
 }
 {% endhighlight %}
 Here, you **have to** use *django.backends.dummy* to force *runfcgi*
-start even if your *'default'* database isn't available.
+to start even if your *'default'* database isn't available.
 
-Here is router I use, is_alive taken from [django_replicated]:
+Here is the router I use; *is_alive* is taken from [django_replicated]:
 
 
 {% highlight python %}
@@ -104,10 +104,10 @@ def get_alive_db():
     return r.db_for_read(None)
 {% endhighlight %}
 
-As you can see, model validation in django is broken!
-It only tries to validate 'default' database, and **will not start** if it is unavailable.
+As you can see, model validation in Django is broken!
+It only tries to validate the 'default' database and **will not start** if it is unavailable.
 
-Here is the patch for django1.3.1 to fix this behaviour:
+Here is the patch for Django 1.3.1 to fix this behavior:
 
 {% highlight diff %}
 Index: django/core/management/base.py
@@ -166,7 +166,7 @@ Index: django/core/management/validation.py
      Validates all models that are part of the specified app. If no app name is provided,
      validates all models of all installed apps. Writes errors, if any, to outfile.
      Returns number of errors.
-+    If no connecton is specified, the django.db.DEFAULT_DB_ALIAS will be used.
++    If no connection is specified, the django.db.DEFAULT_DB_ALIAS will be used.
      """
      from django.conf import settings
 -    from django.db import models, connection
