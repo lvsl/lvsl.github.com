@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[RC] Week #2: Finding my rhythm and learning Zig"
-published: false
+published: true
 date: 2026-04-08 16:34:00
 tags:
   - rc
