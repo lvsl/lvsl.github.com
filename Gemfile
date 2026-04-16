@@ -1,2 +1,5 @@
 source 'https://rubygems.org'
-gem 'github-pages'
+# turns out this whole thing only works with Ruby 3.4
+ruby "~> 3.4"
+
+gem "github-pages", group: :jekyll_plugins
