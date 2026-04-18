@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -14,7 +14,7 @@ layout: nil
     <email>vsleonid+blog@gmail.com</email>
   </author>
 
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts %}
   <entry>
     <id>https://lvsl.github.io/{{ post.id }}</id>
     <link type="text/html" rel="alternate" href="https://lvsl.github.io{{ post.url }}"/>

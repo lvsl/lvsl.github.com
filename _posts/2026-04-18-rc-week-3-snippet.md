@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[RC] Week #3: Journey through Ziglings and building up my coding routine"
+title: "[RC] Week #3: Journey through Ziglings"
 published: true
-date: 2026-04-18 23:52:00
+date: 2026-04-18 00:00:00
 tags:
   - rc
   - coding-retreat
