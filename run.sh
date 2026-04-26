@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-bundle exec jekyll serve --verbose
+bundle exec jekyll serve -l -o --verbose

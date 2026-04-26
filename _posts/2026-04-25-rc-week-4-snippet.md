@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[RC] Week #4: Ziglings are done, side-project that I procrastinated on"
+title: "[RC] Week #4: Ziglings are done; Google AI Pro fiasco; bricked my new car"
 published: true
 date: 2026-04-25 20:00:00
 tags:
