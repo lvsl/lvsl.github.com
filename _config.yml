@@ -1,5 +1,10 @@
 safe: true
 lsi: false
 highlighter: rouge
+enableEmoji: true
 
 theme: jekyll-theme-hacker
+
+plugins:
+  - jemoji
+  - jekyll-sitemap
