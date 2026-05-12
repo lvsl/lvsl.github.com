@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[RC] Week #6: Half-batch checkin"
+title: "[RC] Week #6: Half-batch check-in + Google AI Pro Fiasco"
 published: true
 date: 2026-05-10 09:00:00
 tags:
@@ -13,7 +13,7 @@ tags:
 See my [Week #2 snippet]({% link _posts/2026-04-08-rc-week-2-snippet.md %}) for details.
 Here's a [LinkedIn short video](https://www.linkedin.com/posts/nicholasbs_15-years-in-and-theres-still-no-place-else-ugcPost-7450566979393933312-9NzQ) where Nicholas (RC CEO) explains it really clearly.
 
-## Week 6 Progress (official Half Batch)
+## Week 6 Progress (official Half-Batch)
 Last week I pivoted my project from re-implementing the Android calculator in Zig to re-implementing the UNIX dc calculator in Zig.
 
 I started learning `dc` syntax and functionality; the syntax is definitely not from this generation.
@@ -25,12 +25,12 @@ How it works is amazing:
 
 Breaking it into parts, we have:
 
-6581840 <-- put this number onto stack, in 256-based encoding this number reads as "dnP"
-d       <-- copy top of the stack, so we have that number twice
-n       <-- this will pop the top of the stack and return it (as regular decimal)
+6581840 <-- put this number onto the stack; in base-256 encoding, this number reads as "dnP"
+d       <-- copy the top of the stack, so we have that number twice
+n       <-- this will pop the top of the stack and print it (as a regular decimal)
 6581840 --> first part of the output that you see
-P       <-- prints top of the stack as encoded into 256-base number; this is a beautiful hack to add string manipulations to a calculator
-dnP     --> second part of output
+P       <-- prints the top of the stack as encoded into a base-256 number; this is a beautiful hack to add string manipulations to a calculator
+dnP     --> second part of the output
 ```
 
 Most of my week I spent on the ["AI Pro Fiasco" project](#ai-pro-fiasco),
@@ -42,13 +42,13 @@ Not much focus time last week, as we continue to settle in our place in Portugal
 :point_right: An actual data point from doing that -- when planning a career break and estimating monthly expenses -- **multiply your estimate by two and add 20%** =/
 
 ## AI Pro Fiasco :poop: {#ai-pro-fiasco}
-:point_right: Key observation I got is -- sticking to a plain-text/git managed/agent-cli interface is the best way to consume tokens and be productive with it.
+:point_right: Key observation I got is -- sticking to a plain-text/Git-managed/agent-CLI interface is the best way to consume tokens and be productive with it.
 
 Google provides an option to have "AI Kool-Aid" in the Google apps (Docs, Sheets, Gmail, Drive) --
 called ["AI Pro"](https://support.google.com/googleone/answer/14534406?hl=en&ref_topic=16477118&sjid=15664429330118666705-EU).
 
 I use Drive, Docs, and Sheets mostly. For each, I summarized the current UX when "AI Pro" is ON,
-and a common task for me that Gemini failed with bright colors.
+and a common task for me that Gemini failed with flying colors.
 
 ### Google Drive
 * Task it failed miserably at - move all CSV docs from directory A to B and create subdirectories for every month. Turns out AI for Google Drive can't create directories or move files between directories ... sigh.
@@ -75,4 +75,4 @@ and a common task for me that Gemini failed with bright colors.
 ![Google sheets UI](/static/google-sheet-gemini.png)
 
 
-In conclusion, this is not suprising -- as there multiple groups of people working on competing set of AI-related projects. Currently apprach is "throw some AI on the wall and see what sticks"... My next plan is to switch to plain text Markdown/CSV/git repo and work with Gemini CLI to implement those simple tasks.
+In conclusion, this is not surprising -- as there are multiple groups of people working on a competing set of AI-related projects. The current approach is to "throw some AI on the wall and see what sticks"... My next plan is to switch to plain-text Markdown/CSV/Git repo and work with Gemini CLI to implement those simple tasks.
