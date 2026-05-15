@@ -20,7 +20,7 @@
             <i class="rc-scout__logo"></i>
             <i class="rc-scout__logo"></i>
             <a class="rc-scout__link" target="_blank" href="https://www.recurse.com/scout/click?t=bc2aa91810d9d067750c55453635d83d">
-              Also doing a coding retreat @ "Recurse Center"
+              Recursed @ "Recurse Center" during SP2'26 batch.
             </a>
             <i class="rc-scout__logo"></i>
             <i class="rc-scout__logo"></i>
@@ -54,6 +54,39 @@
           <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-4.0</a>.
           <a target="_blank" href="{% link posts.xml %}">Atom Feed 🗞️</a></small>
     </p>
+    <style>
+      @keyframes fall {
+        0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(105vh) rotate(360deg); opacity: 0.3; }
+      }
+      .lemon {
+        position: fixed;
+        top: -50px;
+        z-index: 9999;
+        pointer-events: none;
+        user-select: none;
+        animation: fall linear forwards;
+      }
+    </style>
+    <script>
+      (function() {
+        const count = 100;
+        const body = document.body;
+        for (let i = 0; i < count; i++) {
+          setTimeout(() => {
+            const lemon = document.createElement('div');
+            lemon.className = 'lemon';
+            lemon.innerText = '🍋';
+            lemon.style.left = Math.random() * 100 + 'vw';
+            lemon.style.fontSize = (Math.random() * 30 + 10) + 'px';
+            const duration = Math.random() * 2 + 1;
+            lemon.style.animationDuration = duration + 's';
+            body.appendChild(lemon);
+            setTimeout(() => lemon.remove(), duration * 1000);
+          }, Math.random() * 5000);
+        }
+      })();
+    </script>
   </body>
 </html>
 
